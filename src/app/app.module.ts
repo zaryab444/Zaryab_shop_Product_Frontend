@@ -4,15 +4,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ButtonModule } from 'primeng/button';
+import { CoreModule } from './core/core.module';
+import { FeaturesComponent } from './features/features/features.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, FeaturesComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ButtonModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent],
